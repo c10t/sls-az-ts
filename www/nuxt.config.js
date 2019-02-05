@@ -1,7 +1,9 @@
 const pkg = require('./package')
+const extendConfig = require('./webpack.config.extend')
 
 module.exports = {
   mode: 'spa',
+  srcDir: 'src/',
 
   /*
   ** Headers of the page
@@ -28,6 +30,11 @@ module.exports = {
   */
   css: [
   ],
+
+  /*
+  ** Extensions
+  */
+  extensions: ['ts', 'js'],
 
   /*
   ** Plugins to load before mounting the App
@@ -58,6 +65,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      extendConfig(config)
+
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
