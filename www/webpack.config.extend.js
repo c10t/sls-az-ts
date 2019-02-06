@@ -1,6 +1,6 @@
 const path = require('path')
 
-module.exports = config => {
+module.exports = (config) => {
   config.resolve.extensions.push('.ts', '.js', '.vue', '.css', '.html')
 
   const tsLoader = {
@@ -24,7 +24,7 @@ module.exports = config => {
   )
 
   // Add TypeScript loader for Vue SFC compile process
-  for (let rule of config.module.rules) {
+  for (const rule of config.module.rules) {
     if (rule.loader === 'vue-loader') {
       rule.options.loaders = {
         ...rule.options.loaders,
