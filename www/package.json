@@ -1,0 +1,6 @@
+{
+  "name": "sls-az",
+  "scripts": {
+    "dev": "nuxt"
+  }
+}
