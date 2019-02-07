@@ -1,6 +1,10 @@
 {
   "name": "sls-az",
+  "private": true,
   "scripts": {
     "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^2.4.3"
   }
 }
