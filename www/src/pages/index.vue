@@ -5,4 +5,4 @@
   </section>
 </template>
 
-<script lang="ts" src='./index.script.ts'></script>
+<script lang="ts" src='./index/index.script.ts'></script>
