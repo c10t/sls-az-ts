@@ -1,3 +1,4 @@
+/*
 declare module '*.vue' {
   import Vue from 'vue'
 
@@ -5,3 +6,4 @@ declare module '*.vue' {
 
   export default _default
 }
+*/
